@@ -1,0 +1,39 @@
+{
+  "title": "Control + u/o to PageUp/PageDown",
+  "rules": [
+    {
+      "description": "Control + u to PageUp, Control + o to PageDown",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "u",
+            "modifiers": {
+              "mandatory": ["left_control"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "page_up"
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": ["left_control"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "page_down"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
